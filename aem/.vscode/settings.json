@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.accessibleViewPreserveCursorPosition": false,
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "default"
+}
