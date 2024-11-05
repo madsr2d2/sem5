@@ -74,37 +74,37 @@ SW,Switch_1,4,Domain_1
 SW,Switch_2,4,Domain_1
 ```
 
-#### Links
+#### links
 
-Links are specified with the following format:
+links are specified with the following format:
 
 ```csv
-LINK,LinkID,SourceDevice,SourcePort,DestinationDevice,DestinationPort,Domain
+link,linkid,sourcedevice,sourceport,destinationdevice,destinationport,domain
 ```
 
-#### Field Descriptions
+#### field descriptions
 
-| Field             | Description                                                        |
+| field             | description                                                        |
 |-------------------|--------------------------------------------------------------------|
-| LINK              | Keyword indicating that this line defines a link.                  |
-| LinkID            | Unique identifier for the link.                                    |
-| SourceDevice      | Identifier of the source device.                                   |
-| SourcePort        | Port number on the source device.                                  |
-| DestinationDevice | Identifier of the destination device.                              |
-| DestinationPort   | Port number on the destination device.                             |
-| Domain            | (Optional) Identifier of the TSN domain to which the link belongs. |
+| link              | keyword indicating that this line defines a link.                  |
+| linkid            | unique identifier for the link.                                    |
+| sourcedevice      | identifier of the source device.                                   |
+| sourceport        | port number on the source device.                                  |
+| destinationdevice | identifier of the destination device.                              |
+| destinationport   | port number on the destination device.                             |
+| domain            | (optional) identifier of the tsn domain to which the link belongs. |
 
-**Notes:**
+**notes:**
 
-- The `Domain` field is optional and can be used to specify the TSN domain explicitly.
-- Device and link names should be unique.
+- the `domain` field is optional and can be used to specify the tsn domain explicitly.
+- device and link names should be unique.
 
-#### Example Link Entries
+#### example link entries
 
 ```csv
-LINK,Link_1,Node_A,1,Switch_1,1,Domain_1
-LINK,Link_2,Switch_1,2,Switch_2,1,Domain_1
-LINK,Link_3,Switch_2,2,Node_B,1,Domain_1
+link,link_1,node_a,1,switch_1,1,domain_1
+link,link_2,switch_1,2,switch_2,1,domain_1
+link,link_3,switch_2,2,node_b,1,domain_1
 ```
 
 ## Configuration File (`config.ini`)
